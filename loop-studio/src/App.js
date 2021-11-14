@@ -1,11 +1,12 @@
 import React from 'react';
 import GlobalStyle from './GlobalStyles';
+import Hero from './components/Hero/Hero';
 
 const App = () => {
   return (
     <div className="App">
       <GlobalStyle />
-      <h1>Hello World</h1>
+      <Hero />
     </div>
   );
 };
