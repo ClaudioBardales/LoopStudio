@@ -19,7 +19,6 @@ const Navbar = () => {
 
 const Nav = Styled.div`
 min-height: 15vh;
-border: 1px solid red;
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -32,6 +31,7 @@ flex-direction: row;
 justify-content: space-between;
 li{
  list-style-type: none;
+ color: white;
 }
 
 `;

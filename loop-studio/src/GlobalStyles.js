@@ -11,11 +11,11 @@ const GlobalStyle = createGlobalStyle`
    font-family: 'Alata', sans-serif;
  }
 
- p {
+ p, li {
 
     font-size: 15px;
     font-family: 'Josefin Sans', sans-serif;
- }
+    }
 
 
 

@@ -10,9 +10,7 @@ const Logo = () => {
 };
 
 const Styledh1 = Styled.h1`
-
-
-
+color: white;
 `;
 
 export default Logo;
