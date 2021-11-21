@@ -17,12 +17,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Josefin Sans', sans-serif;
     }
 
-
-
-
-
-
-
 `;
 
 export default GlobalStyle;
