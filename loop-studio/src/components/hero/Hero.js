@@ -8,13 +8,13 @@ const Hero = () => {
     <Img>
       <Navbar />
       <Wrapper>
-        <Styledh1>
+        <Styledp>
           <p>
             IMMERSIVE <br />
             EXPERIENCES <br />
             THAT DELIVER
           </p>
-        </Styledh1>
+        </Styledp>
       </Wrapper>
     </Img>
   );
@@ -29,10 +29,13 @@ min-height: 50vh;
 
 const Wrapper = Styled.div`
 margin: auto;
-width: 71%;
+width: 77%;
+@media (max-width: 768px){
+ display: flex;
+ justify-content: center;
 `;
 
-const Styledh1 = Styled.div`
+const Styledp = Styled.div`
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -46,6 +49,11 @@ p{
   color: white;
   font-weight: lighter;
 }
+
+
+}
+
+
 
 `;
 

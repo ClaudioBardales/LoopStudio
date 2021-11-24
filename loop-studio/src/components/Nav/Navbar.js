@@ -13,7 +13,6 @@ const Navbar = () => {
 };
 
 const Nav = Styled.div`
-z-index: 20;
 min-height: 15vh;
 display: flex;
 align-items: center;

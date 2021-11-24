@@ -3,14 +3,22 @@ import Styled from 'styled-components';
 
 const Logo = () => {
   return (
-    <div>
-      <Styledh1>loopstudios</Styledh1>
-    </div>
+    <LogoContainer>
+      <h1>loopstudios</h1>
+    </LogoContainer>
   );
 };
 
-const Styledh1 = Styled.h1`
-color: white;
+const LogoContainer = Styled.div`
+ 
+width: 15.2%;
+h1{
+  color: white;
+}
+@media (max-width: 768px){
+ width: 50.2%;
+}
+
 `;
 
 export default Logo;
