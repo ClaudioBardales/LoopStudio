@@ -5,43 +5,45 @@ import aboutimg from '../../img/desktop/image-interactive.jpg';
 const About = () => {
   return (
     <Container>
-      <ContentImg src={aboutimg} alt="img" />
-      <Content>
-        <h1>
-          THE LEADER IN <br />
-          INTERACTIVE VR
-        </h1>
-        <p>
-          Founded in 2011, Loopstudios has been producing world-class <br />{' '}
-          virtual reality projects for some of the best companies around the{' '}
-          <br />
-          globe. Our award-winning creations have transformed <br />
-          businesses through digital experiences that bind to their brand.
-        </p>
-      </Content>
+      <Wrapper>
+        <ContentImg src={aboutimg} alt="img" />
+        <Content>
+          <h1>
+            THE LEADER IN <br />
+            INTERACTIVE VR
+          </h1>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class <br />{' '}
+            virtual reality projects for some of the best companies around the{' '}
+            <br />
+            globe. Our award-winning creations have transformed <br />
+            businesses through digital experiences that bind to their brand.
+          </p>
+        </Content>
+      </Wrapper>
     </Container>
   );
 };
 
 const Container = Styled.div`
-min-height: 100vh;
-display: grid;
-position: relative;
-grid-template-columns: repeat(12, 1fr)
-place-items: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-const ContentImg = Styled.div`
-grid-column: 4/ -1;
-grid-row: 1;
+const Wrapper = Styled.div`
+display: grid;
+place-items: center;
+width: 100%;
 `;
 
 const Content = Styled.div`
-grid-row: 1;
-grid-column: 1 / span 8;
-width: 40%;
+width: 63%;
 padding: 3rem;
-background-color: teal;
+background-color: white;
+grid-column: 2 / span 3;
+grid-row: 3 / span 3;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -56,6 +58,12 @@ p{
     line-height: 1.6;
 }
 
+
+`;
+
+const ContentImg = Styled.img`
+grid-column: 1 / span 2;
+grid-row: 2 / span 2;
 
 `;
 
