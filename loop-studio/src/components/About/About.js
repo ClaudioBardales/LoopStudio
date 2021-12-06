@@ -57,13 +57,22 @@ h1{
 p{
     line-height: 1.6;
 }
+@media (max-width: 768px){
+  grid-column: auto;
+  grid-row: auto;
+  width: 80%;
 
+}
 
 `;
 
 const ContentImg = Styled.img`
 grid-column: 1 / span 2;
 grid-row: 2 / span 2;
+@media (max-width: 768px){
+  width: 80%;
+  grid-column: auto;
+  grid-row: auto;
 
 `;
 
