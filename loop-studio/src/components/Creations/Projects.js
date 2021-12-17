@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Container>
       <Wrapper>
-        <h1>Our Creations</h1>
+        <h1>OUR CREATIONS</h1>
         <Button />
       </Wrapper>
       <Grid />
@@ -21,9 +21,12 @@ min-height: 100vh;
 
 const Wrapper = Styled.div`
 margin: auto;
-width: 85%;
+width: 87%;
 display: flex;
 justify-content: space-between;
+h1{
+  font-weight: lighter;
+}
 `;
 
 export default Projects;

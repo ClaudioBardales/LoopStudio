@@ -20,6 +20,16 @@ background-color: white;
 p{
   font-size: 12.5px;
   color: black;
+
+}
+&:hover{
+  background-color: black;
+  transition: all .4s ease;
+  p{
+    color: white;
+    transition: all .4s ease;
+
+  }
 }
 
 

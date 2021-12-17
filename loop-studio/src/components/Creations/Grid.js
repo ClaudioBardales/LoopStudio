@@ -12,28 +12,186 @@ import img8 from './../../img/desktop/image-soccer-team.jpg';
 const Grid = () => {
   return (
     <Layout>
-      <img src={img1} alt="image1" />
-      <img src={img2} alt="image2" />
-      <img src={img3} alt="image3" />
-      <img src={img4} alt="image4" />
-      <img src={img5} alt="image5" />
-      <img src={img6} alt="image6" />
-      <img src={img7} alt="image7" />
-      <img src={img8} alt="image8" />
+      <ImageOne>
+        <p>
+          DEEP
+          <br /> EARTH
+        </p>
+      </ImageOne>
+      <ImageTwo>
+        <p>NIGHT ARCADE</p>
+      </ImageTwo>
+      <ImageThree>
+        <p>SOCCER TEAM VR</p>
+      </ImageThree>
+      <ImageFour>
+        <p>THE GRID</p>
+      </ImageFour>
+      <ImageFive>
+        <p>FROM UP ABOVE</p>
+      </ImageFive>
+      <ImageSix>
+        <p>POCKET BOREALIS</p>
+      </ImageSix>
+      <ImageSeven>
+        <p>THE CURIOSITY</p>
+      </ImageSeven>
+      <ImageEight>
+        <p>MAKE IT FISHEYE</p>
+      </ImageEight>
     </Layout>
   );
 };
 
 const Layout = Styled.div`
 margin: auto;
+width: 90%;
 padding-top: 2rem;
-width: 85%;
 display: grid;
 place-items: center;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-gap: 1rem;
+grid-gap: 10px;
+@media (max-width: 768px){
+  grid-template-columns: 1fr 1fr;
+}
+`;
 
+const ImageOne = Styled.div`
+ background-image: url(${img1});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+   color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+`;
 
+const ImageTwo = Styled.div`
+ background-image: url(${img2});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+  color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+
+`;
+
+const ImageThree = Styled.div`
+ background-image: url(${img3});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+  color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+`;
+
+const ImageFour = Styled.div`
+ background-image: url(${img4});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+  color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+`;
+
+const ImageFive = Styled.div`
+ background-image: url(${img5});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+  color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+`;
+
+const ImageSix = Styled.div`
+ background-image: url(${img6});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+  color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+`;
+
+const ImageSeven = Styled.div`
+ background-image: url(${img7});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+  color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+`;
+
+const ImageEight = Styled.div`
+ background-image: url(${img8});
+ background-repeat: no-repeat;
+ min-height: 46vh;
+ min-width: 26vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ p{
+  color: white;
+   width: 65%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.80rem;
+ }
+ 
 `;
 
 export default Grid;
