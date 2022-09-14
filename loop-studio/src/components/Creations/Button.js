@@ -17,6 +17,7 @@ justify-content: center;
 align-items: center;
 padding: 10px 0 7px 0;
 background-color: white;
+cursor: pointer;
 p{
   font-size: 12.5px;
   color: black;

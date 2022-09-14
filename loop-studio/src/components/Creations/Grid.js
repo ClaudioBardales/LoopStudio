@@ -12,186 +12,70 @@ import img8 from './../../img/desktop/image-soccer-team.jpg';
 const Grid = () => {
   return (
     <Layout>
-      <ImageOne>
+      <Image>
+        <img src={img1} alt="img1" />
         <p>
           DEEP
           <br /> EARTH
         </p>
-      </ImageOne>
-      <ImageTwo>
+      </Image>
+      <Image>
+        <img src={img2} alt="img1" />
         <p>NIGHT ARCADE</p>
-      </ImageTwo>
-      <ImageThree>
+      </Image>
+      <Image>
+        <img src={img3} alt="img1" />
         <p>SOCCER TEAM VR</p>
-      </ImageThree>
-      <ImageFour>
-        <p>THE GRID</p>
-      </ImageFour>
-      <ImageFive>
+      </Image>
+      <Image>
+        <img src={img4} alt="img1" />
+        <p>
+          THE <br />
+          GRID
+        </p>
+      </Image>
+      <Image>
+        <img src={img5} alt="img1" />
         <p>FROM UP ABOVE</p>
-      </ImageFive>
-      <ImageSix>
+      </Image>
+      <Image>
+        <img src={img6} alt="img1" />
         <p>POCKET BOREALIS</p>
-      </ImageSix>
-      <ImageSeven>
+      </Image>
+      <Image>
+        <img src={img7} alt="img1" />
         <p>THE CURIOSITY</p>
-      </ImageSeven>
-      <ImageEight>
+      </Image>
+      <Image>
+        <img src={img8} alt="img1" />
         <p>MAKE IT FISHEYE</p>
-      </ImageEight>
+      </Image>
     </Layout>
   );
 };
 
 const Layout = Styled.div`
-margin: auto;
-width: 90%;
-padding-top: 2rem;
+min-height: 100vh;
 display: grid;
 place-items: center;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-gap: 10px;
+position: relative;
 @media (max-width: 768px){
   grid-template-columns: 1fr 1fr;
 }
 `;
 
-const ImageOne = Styled.div`
- background-image: url(${img1});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-   color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
-`;
-
-const ImageTwo = Styled.div`
- background-image: url(${img2});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-  color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
-
-`;
-
-const ImageThree = Styled.div`
- background-image: url(${img3});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-  color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
-`;
-
-const ImageFour = Styled.div`
- background-image: url(${img4});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-  color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
-`;
-
-const ImageFive = Styled.div`
- background-image: url(${img5});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-  color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
-`;
-
-const ImageSix = Styled.div`
- background-image: url(${img6});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-  color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
-`;
-
-const ImageSeven = Styled.div`
- background-image: url(${img7});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-  color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
-`;
-
-const ImageEight = Styled.div`
- background-image: url(${img8});
- background-repeat: no-repeat;
- min-height: 46vh;
- min-width: 26vh;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- p{
-  color: white;
-   width: 65%;
-   display: flex;
-   justify-content: flex-start;
-   font-size: 1.80rem;
- }
- 
+const Image = Styled.div`
+object-fit: none;
+position: relative;
+p{
+    color: white;
+    position: absolute;
+    top: 394px;
+    width: 65%;
+    font-size: 1.80rem;
+  }
 `;
 
 export default Grid;

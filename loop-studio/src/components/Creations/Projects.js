@@ -16,12 +16,13 @@ const Projects = () => {
 };
 
 const Container = Styled.div`
-min-height: 100vh;
+min-height: 130vh;
 `;
 
 const Wrapper = Styled.div`
 margin: auto;
-width: 87%;
+padding-bottom: 15px;
+width: 93.2%;
 display: flex;
 justify-content: space-between;
 h1{
