@@ -1,19 +1,43 @@
 import React from 'react';
+import { useState } from 'react';
 import Styled from 'styled-components';
-import Button from './Button';
 import Grid from './Grid';
 
 const Projects = () => {
+  const [show, setShow] = useState(true);
+  const handleClick = () => {
+    setShow(!show);
+  };
   return (
     <Container>
       <Wrapper>
         <h1>OUR CREATIONS</h1>
-        <Button />
+        <Button onClick={handleClick}>{show ? 'HIDE ALL' : 'SHOW ALL'}</Button>
       </Wrapper>
-      <Grid />
+      {show ? <Grid /> : null}
     </Container>
   );
 };
+
+const Button = Styled.button`
+border: 1px solid black;
+width: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 0 7px 0;
+background-color: white;
+cursor: pointer;
+font-size: 12.5px;
+color: black;
+&:hover{
+  background-color: black;
+  transition: all .4s ease;
+  color: white;
+  transition: all .4s ease;
+}
+
+`;
 
 const Container = Styled.div`
 min-height: 130vh;

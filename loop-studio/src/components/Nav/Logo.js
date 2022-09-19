@@ -10,7 +10,6 @@ const Logo = () => {
 };
 
 const LogoContainer = Styled.div`
- 
 width: 15.2%;
 h1{
   color: white;

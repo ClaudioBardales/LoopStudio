@@ -5,19 +5,19 @@ const MobileNav = ({ open }) => {
   return (
     <Items open={open}>
       <li>
-        <a>About</a>
+        <a href="#">About</a>
       </li>
       <li>
-        <a>Careers</a>
+        <a href="#">Careers</a>
       </li>
       <li>
-        <a>Events</a>
+        <a href="#">Events</a>
       </li>
       <li>
-        <a>Products</a>
+        <a href="#">Products</a>
       </li>
       <li>
-        <a>Support</a>
+        <a href="#">Support</a>
       </li>
     </Items>
   );
@@ -42,7 +42,10 @@ const Items = Styled.div`
 }
 li{
  list-style-type: none;
- color: white;
+ a{
+   text-decoration: none;
+   color: white;
+ }
 `;
 
 export default MobileNav;
