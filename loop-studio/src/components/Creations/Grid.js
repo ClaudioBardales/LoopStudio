@@ -61,9 +61,6 @@ place-items: center;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-gap: 10px;
 position: relative;
-@media (max-width: 768px){
-  grid-template-columns: 1fr 1fr;
-}
 `;
 
 const Image = Styled.div`

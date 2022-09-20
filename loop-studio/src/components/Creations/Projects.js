@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Styled from 'styled-components';
+import MobileGrid from './MobileGrid';
 import Grid from './Grid';
 
 const Projects = () => {
@@ -14,7 +15,7 @@ const Projects = () => {
         <h1>OUR CREATIONS</h1>
         <Button onClick={handleClick}>{show ? 'HIDE ALL' : 'SHOW ALL'}</Button>
       </Wrapper>
-      {show ? <Grid /> : null}
+      <MobileGrid />
     </Container>
   );
 };
