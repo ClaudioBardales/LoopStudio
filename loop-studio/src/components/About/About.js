@@ -13,11 +13,10 @@ const About = () => {
             INTERACTIVE VR
           </h1>
           <p>
-            Founded in 2011, Loopstudios has been producing world-class <br />{' '}
-            virtual reality projects for some of the best companies around the{' '}
-            <br />
-            globe. Our award-winning creations have transformed <br />
-            businesses through digital experiences that bind to their brand.
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
           </p>
         </Content>
       </Wrapper>
@@ -60,7 +59,13 @@ p{
 @media (max-width: 768px){
   grid-column: auto;
   grid-row: auto;
-  width: 80%;
+  width: 100%;
+  h1{
+    font-size: 40px;
+  }
+  p{
+    text-indent: 10px;
+  }
 
 }
 
