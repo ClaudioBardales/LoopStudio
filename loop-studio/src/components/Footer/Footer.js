@@ -38,6 +38,9 @@ const Footer = () => {
 const Container = Styled.div`
 min-height: 20vh;
 background-color: black;
+@media (max-width: 500px){
+  min-height: 40vh;
+}
 `;
 
 const First = Styled.div`
@@ -48,6 +51,10 @@ align-items: center;
 padding-bottom: 15px;
 h1{
   color: white;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px){
+  flex-direction: column;
 }
 `;
 
@@ -55,7 +62,11 @@ const Icons = Styled.div`
 width: 15%;
 display:flex;
 justify-content: space-between;
-
+cursor: pointer;
+@media (max-width: 500px){
+  flex-direction: row;
+  width: 40%;
+}
 
 `;
 
@@ -65,12 +76,26 @@ color: white;
 display: flex;
 justify-content: space-between;
 align-items: center;
+@media (max-width: 500px){
+  flex-direction: column;
+  div{
+    margin-top: 20px;
+  }
+}
 `;
 
 const Links = Styled.div`
 display: flex;
 width: 30%;
 justify-content: space-between;
+p{
+  cursor: pointer;
+}
+@media (max-width: 500px){
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 `;
 
 const Wrapper = Styled.div`
@@ -78,7 +103,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-min-height: 20vh;
+min-height: 40vh;
 `;
 
 export default Footer;

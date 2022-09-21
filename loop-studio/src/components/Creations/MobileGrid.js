@@ -49,10 +49,9 @@ const MobileGrid = () => {
 };
 
 const MobileLayout = Styled.div`
-border: 1px solid red;
 display: grid;
 place-items: center;
-max-width: 90%;
+max-width: 95%;
 margin: 0 auto;
 
 `;
@@ -62,8 +61,7 @@ position: relative;
 p{
     color: white;
     position: absolute;
-    top: 165px;
-    width: 65%;
+    top: 148px;
     font-size: 1.80rem;
 }
 
