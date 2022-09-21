@@ -6,6 +6,7 @@ const Burger = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
+      <h1>loopstudio</h1>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
