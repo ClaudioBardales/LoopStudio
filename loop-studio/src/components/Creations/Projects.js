@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import Styled from 'styled-components';
 import MobileGrid from './MobileGrid';
@@ -6,6 +6,13 @@ import Grid from './Grid';
 
 const Projects = () => {
   const [show, setShow] = useState(true);
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 500;
+
+  useEffect(() => {
+    window.addEventListener('resize', () => setWidth(window.innerWidth));
+  }, []);
+
   const handleClick = () => {
     setShow(!show);
   };
@@ -14,8 +21,9 @@ const Projects = () => {
       <Wrapper>
         <h1>OUR CREATIONS</h1>
         <Button onClick={handleClick}>{show ? 'HIDE ALL' : 'SHOW ALL'}</Button>
+        {show ? <Grid /> : null}
       </Wrapper>
-      <MobileGrid />
+      {width > breakpoint ? <Grid /> : <MobileGrid />}
     </Container>
   );
 };

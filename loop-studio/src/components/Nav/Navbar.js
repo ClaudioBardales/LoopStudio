@@ -15,8 +15,8 @@ const Navbar = () => {
 const Nav = Styled.div`
 min-height: 15vh;
 display: flex;
-align-items: center;
 justify-content: space-around;
+align-items: center;
 `;
 
 export default Navbar;

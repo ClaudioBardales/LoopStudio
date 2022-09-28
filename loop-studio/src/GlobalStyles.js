@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
  p, li {
 
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
     }
 

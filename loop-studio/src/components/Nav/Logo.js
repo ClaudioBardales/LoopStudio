@@ -14,7 +14,7 @@ width: 15.2%;
 h1{
   color: white;
 }
-@media (max-width: 768px){
+@media (max-width: 500px){
  width: 50.2%;
 }
 

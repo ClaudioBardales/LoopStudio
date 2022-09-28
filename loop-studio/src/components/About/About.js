@@ -34,7 +34,7 @@ const Container = Styled.div`
 const Wrapper = Styled.div`
 display: grid;
 place-items: center;
-width: 100%;
+width: 90%;
 `;
 
 const Content = Styled.div`
@@ -56,7 +56,7 @@ h1{
 p{
     line-height: 1.6;
 }
-@media (max-width: 768px){
+@media (max-width: 500px){
   grid-column: auto;
   grid-row: auto;
   width: 100%;

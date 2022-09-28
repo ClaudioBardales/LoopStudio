@@ -9,13 +9,13 @@ const Hero = () => {
     <Img>
       <Navbar />
       <Wrapper>
-        <Styledp>
+        <Paragraph>
           <p>
             IMMERSIVE <br />
             EXPERIENCES <br />
             THAT DELIVER
           </p>
-        </Styledp>
+        </Paragraph>
       </Wrapper>
     </Img>
   );
@@ -25,7 +25,7 @@ const Img = Styled.div`
 background-image: url(${HeroImg});
 background-repeat: no-repeat;
 background-size: cover;
-min-height: 50vh;
+min-height: 60vh;
 @media (max-width: 500px){
   background-image: url(${MobileHeroImg});
   min-height: 80vh;
@@ -34,7 +34,7 @@ min-height: 50vh;
 
 const Wrapper = Styled.div`
 margin: auto;
-width: 77%;
+width: 72%;
 @media (max-width: 500px){
  display: flex;
  justify-content: center;
@@ -43,7 +43,7 @@ width: 77%;
 
 `;
 
-const Styledp = Styled.div`
+const Paragraph = Styled.div`
 display: flex;
 justify-content: flex-start;
 align-items: center;
