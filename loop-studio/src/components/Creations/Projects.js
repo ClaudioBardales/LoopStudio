@@ -9,21 +9,21 @@ const Projects = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 500;
 
+  const handleClick = () => {
+    setShow(!show);
+  };
+
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth));
   }, []);
 
-  const handleClick = () => {
-    setShow(!show);
-  };
   return (
     <Container>
       <Wrapper>
         <h1>OUR CREATIONS</h1>
         <Button onClick={handleClick}>{show ? 'HIDE ALL' : 'SHOW ALL'}</Button>
-        {show ? <Grid /> : null}
       </Wrapper>
-      {width > breakpoint ? <Grid /> : <MobileGrid />}
+      {show ? <Grid /> : null && show ? <MobileGrid /> : null}
     </Container>
   );
 };

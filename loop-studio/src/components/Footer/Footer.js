@@ -39,7 +39,7 @@ const Container = Styled.div`
 min-height: 20vh;
 background-color: black;
 @media (max-width: 500px){
-  min-height: 40vh;
+ min-height: 40vh;
 }
 `;
 
@@ -103,7 +103,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-min-height: 40vh;
+min-height: 23vh;
 `;
 
 export default Footer;

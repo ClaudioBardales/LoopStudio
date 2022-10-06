@@ -59,12 +59,10 @@ min-height: 100vh;
 display: grid;
 place-items: center;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-gap: 10px;
 position: relative;
 `;
 
 const Image = Styled.div`
-object-fit: none;
 position: relative;
 p{
     color: white;
@@ -72,6 +70,10 @@ p{
     top: 394px;
     width: 65%;
     font-size: 1.80rem;
+  }
+  img{
+    object-fit: cover ;
+
   }
 `;
 
