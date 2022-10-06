@@ -1,4 +1,4 @@
-#Loop Studios
+## Loop Studios
 
 This is a landing page for a Virtual Reality Startup who wanted to showcase themselves as a company.
 
