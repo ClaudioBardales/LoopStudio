@@ -4,7 +4,7 @@ This is a landing page for a Virtual Reality Startup who wanted to showcase them
 
 ## About This Project
 
-A Client wanted me to create a landing page for his startup and wanted me to make something sleek and simple to understand for their users to know about the company
+A Client wanted me to create a landing page for his startup and wanted me to make something sleek and simple to understand for their users to know about the company.
 
 ## Setup
 
