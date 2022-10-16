@@ -55,11 +55,12 @@ const Grid = () => {
 };
 
 const Layout = Styled.div`
-min-height: 100vh;
+width: 93%;
+margin: auto;
 display: grid;
-place-items: center;
+grid-gap: 10px;
+padding-bottom: 10px;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-position: relative;
 `;
 
 const Image = Styled.div`
@@ -72,8 +73,8 @@ p{
     font-size: 1.80rem;
   }
   img{
-    object-fit: cover ;
-
+    display: block;
+    width: 100%;
   }
 `;
 
