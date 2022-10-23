@@ -69,7 +69,7 @@ p{
 
 const Img = Styled.img`
 width: 100%;
-object-fit: cover;
+display: block;
 `;
 
 export default MobileGrid;

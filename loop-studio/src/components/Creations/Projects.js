@@ -13,9 +13,17 @@ const Projects = () => {
     setShow(!show);
   };
 
+  let grid;
+
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth));
   }, []);
+
+  if (width > breakpoint) {
+    grid = <Grid />;
+  } else {
+    grid = <MobileGrid />;
+  }
 
   return (
     <Container>
@@ -23,7 +31,7 @@ const Projects = () => {
         <h1>OUR CREATIONS</h1>
         <Button onClick={handleClick}>{show ? 'HIDE ALL' : 'SHOW ALL'}</Button>
       </Wrapper>
-      {show ? <Grid /> : null && show ? <MobileGrid /> : null}
+      {show ? grid : null}
     </Container>
   );
 };
@@ -49,7 +57,7 @@ color: black;
 `;
 
 const Container = Styled.div`
-min-height: 130vh;
+min-height: 100vh;
 `;
 
 const Wrapper = Styled.div`
