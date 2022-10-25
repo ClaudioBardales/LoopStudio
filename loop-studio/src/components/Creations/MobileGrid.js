@@ -50,8 +50,9 @@ const MobileGrid = () => {
 
 const MobileLayout = Styled.div`
 display: grid;
-place-items: center;
+grid-gap: 10px;
 max-width: 95%;
+padding-bottom: 10px;
 margin: 0 auto;
 
 `;

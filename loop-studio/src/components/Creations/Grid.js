@@ -68,8 +68,8 @@ position: relative;
 p{
     color: white;
     position: absolute;
-    top: 394px;
-    width: 65%;
+    top: 519px;
+    width: 40%;
     font-size: 1.80rem;
   }
   img{
